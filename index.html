@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travego.com</title>
+    <link rel="stylesheet" href="style.css" />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+    </head>
+    
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background circle for the globe -->
+          <circle cx="30" cy="30" r="20" fill="#4CAF50" />
+
+          <!-- Airplane path -->
+          <path
+            d="M15 30 Q30 15 45 30"
+            stroke="#fff"
+            stroke-width="2"
+            fill="transparent"
+          />
+
+          <!-- Airplane -->
+          <polygon points="45,28 50,30 45,32" fill="#fff" />
+
+          <!-- Text -->
+          <text
+            x="70"
+            y="35"
+            font-family="Arial, sans-serif"
+            font-size="24"
+            fill="#333"
+          >
+            Travego
+          </text>
+        </svg>
+      </header>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Taravels</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <button type="button"  onclick="window.location.href='Login.html'">Login</button>
+    </div>
+    <main>
+        <section class="hero hero-image">
+          
+          <h1>Welcome to Travego</h1>
+          <p>Your adventure starts here. Explore the world with us.</p>
+          <button type="button" class="hero-button" id="btt">Get Started</button>
+        </section>
+        <section class="features">
+          <div class="feature">
+            <img src="images\103974251.cms" alt="Destinations" class="feature-image" />
+            <h2>Destinations</h2>
+            <p>Discover amazing places around the globe.</p>
+            <button type="button">view more</button>
+          </div>
+          <div class="feature">
+            <img src="images\lets-go-travel-tips.jpg"  alt="Guides" class="feature-image" />
+            <h2>Guides</h2>
+            <p>Get expert advice and tips for your travels.</p>
+            <button type="button">view more</button>
+          </div>
+          <div class="feature">
+            <div class="feature-overlay">
+              
+              <div class="feature-text">
+                <h2>Support</h2>
+                <p>We're here to help you 24/7.</p>
+                <form  method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <button type="submit" id="support-btn" onclick="submit_btn()">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+      </main>
+      
+      
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3 id="about">About Us</h3>
+            <p>Travego is your go-to platform for all your travel needs. Explore the world with us!</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Travels</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-media">
+              <li><a href="#"><i class="fab fa-facebook-f"> Facebook</i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"> Twitter</i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"> Instagram</i></a></li>
+              
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: info@travego.com</p>
+            <p>Phone: +1 234 567 890</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Travego. All rights reserved.</p>
+        </div>
+      </footer>
+      
+      
+  </body>
+  <script src="script.js"></script>
+</html>
